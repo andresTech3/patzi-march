@@ -1,0 +1,46 @@
+{
+    "extends": [
+        "airbnb",
+        "prettier",
+        "plugin:react/jsx-runtime"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [
+        1,
+        {
+            "extensions": [
+            ".js",
+            ".jsx"
+            ]
+        }
+        ],
+        "react/prop-types": 0,
+        "no-unused-vars" : "warn",
+        "no-underscore-dangle": 0,
+        "treact/jsx-no-useless-fragment" : "off",
+        "react/jsx-no-useless-fragment" : "warn",
+        "import/extensions": ["warn" , "always", {"ignorePackages" : true}],
+        "react/self-closing-comp": ["warn",{"component" : true, "html" : true}],
+        "import/imports-first": [
+        "error",
+        "absolute-first"
+        ],
+        "import/newline-after-import": "error"
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true
+    },
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "requireConfigFile": false
+    }
+}
